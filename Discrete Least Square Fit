@@ -34,3 +34,9 @@ axis([0 7 0 5])
 xlabel('x') 
 ylabel('y') 
 legend('f(x)','data', 'Location','Northwest')
+syms x;
+f = poly2sym(c, x);
+
+% Display the symbolic expression in the command window.
+fprintf('The fitted polynomial function is:\n');
+disp(f);
